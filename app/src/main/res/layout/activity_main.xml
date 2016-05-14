@@ -13,9 +13,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enviar Email"
-        android:id="@+id/button"
+        android:id="@+id/btSendMail"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="sendMail" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolher foto"
+        android:id="@+id/btChoosePhoto"
+        android:layout_alignBottom="@+id/btSendMail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="choosePhoto" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

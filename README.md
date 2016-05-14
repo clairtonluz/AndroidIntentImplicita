@@ -1,2 +1,2 @@
 # AndroidIntentImplicita
-Trabalho sobre IntentImplicita no Android
+Trabalho sobre Intent Implícita no Android

@@ -1,4 +1,4 @@
-package br.com.clairtonluz.androidintentimplicita.service;
+package br.com.clairtonluz.androidintentimplicita.utils;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,7 +7,7 @@ import android.net.Uri;
 /**
  * Created by clairton on 14/05/16.
  */
-public class MailService {
+public class MailUtils {
 
     public static void composeEmail(String[] addresses, String subject, String body, Activity activity) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
