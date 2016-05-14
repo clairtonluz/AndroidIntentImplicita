@@ -10,29 +10,41 @@
     tools:context="br.com.clairtonluz.androidintentimplicita.MainActivity">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Enviar Email"
         android:id="@+id/btSendMail"
+        android:onClick="sendMail"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="sendMail" />
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Escolher foto"
         android:id="@+id/btChoosePhoto"
-        android:layout_alignBottom="@+id/btSendMail"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="choosePhoto" />
+        android:onClick="choosePhoto"
+        android:layout_below="@+id/btBlog"
+        android:layout_alignLeft="@+id/btSendMail"
+        android:layout_alignStart="@+id/btSendMail" />
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
         android:id="@+id/imageView"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:src="@drawable/profile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meu Blog"
+        android:id="@+id/btBlog"
+        android:onClick="openBlog"
+        android:layout_below="@+id/btSendMail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

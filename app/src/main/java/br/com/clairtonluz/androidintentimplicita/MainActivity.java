@@ -8,12 +8,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
+import br.com.clairtonluz.androidintentimplicita.utils.BrowserUtils;
 import br.com.clairtonluz.androidintentimplicita.utils.FileUtils;
 import br.com.clairtonluz.androidintentimplicita.utils.MailUtils;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_IMAGE_GET = 1;
+    public static final String MEU_BLOG = "http://blog.clairtonluz.com.br";
     private ImageView imageView;
 
     @Override
@@ -31,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void choosePhoto(View view) {
         FileUtils.selectPhoto(REQUEST_IMAGE_GET, this);
+    }
+
+    public void openBlog(View view) {
+        BrowserUtils.openWebPage(MEU_BLOG, this);
     }
 
     @Override
